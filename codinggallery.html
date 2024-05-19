@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleeby.ca</title>
+    <!-- reference your stylesheet here -->
+    <link rel = "stylesheet" href="styles/web.css">
+    <!-- reference your source code here -->
+    <script src = "scripts/web.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <style>
+        .container {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            padding-top: 15rem;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+        }
+
+        #console {
+            background-color: #000;
+            padding: 10px;
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            max-width: 700px;
+            min-height: 150px;
+            overflow: auto;
+        }
+
+        .command {
+            color: white;
+        }
+
+        .output {
+            color: #00ff00;
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar is-black bg-inverse navbar-inverse fixed-top is-fixed-top" style="height: 100px;">
+        <img src="./images/Untitled_Artwork (6).png" href = "web.html" style="margin-left: auto; margin-right: auto;">
+    </nav>
+    <nav class="navbar is-black bg-faded navbar-light fixed-top fixed-top-2 is-fixed-top" style="height: 100px;">
+        <ul class = "headermenu" style="margin-left: auto; margin-right: auto; padding-left: 12rem; padding-top: 2rem;">
+            <li class="headertext"><a href="web.html">H O M E</a></li>
+			<li class="headertext"><a href="codinggallery.html">C O D I N G</a></li>
+            <li class="headertext"><a href="">R E S U M E</a></li>
+            <li class="headertext"><a href="">T I M E  W A S T E R</a></li>
+			<!-- <li><a href="">Support</a></li> -->
+        </ul>
+    </nav>
+    <!--BODY CONTAINER-->
+    <main class="container">
+        <div id="console">
+            <div>
+                <p class="command">> EMOTION-CLASSIFIER-THESIS:</p>
+                <p class="command">> DESCRIPTION:</p>
+                <p class="output">Using machine learning, and py-torch lightning i created a multi classifier AI that can determine the emotion of a person by their speech</p>
+                <p class="output">Then using transfer learning this was transformed into a depression classifier that uses machine learning to determine the likely hood a person has depression based on an audio segment</p>
+                <p class="output">To read more about it <a href="https://github.com/Hollowhking/Emotion_Classifier">click here</a></p>
+            </div>
+        </div>
+        <br>
+        <div id="console">
+            <div>
+                <p class="command">> FLUID-SIMULATOR:</p>
+                <p class="command">> DESCRIPTION:</p>
+                <p class="output">Using java I was able to model the way water particles behave</p>
+                <p class="output">within the simulator each circle is a particle and they bounce off each other.</p>
+                <p class="output">This project took a few days and was an incredibly fun challenge to create to read more about it <a href="https://github.com/Hollowhking/Fluid_Sim">click here</a> </p>
+            </div>
+        </div>
+        <br>
+        <div id="console">
+            <div>
+                <p class="command">> ORGANIC-TREE-GROWTH-SIMULATOR:</p>
+                <p class="command">> DESCRIPTION:</p>
+                <p class="output">Using python to prototype, and git as version control. I created an L-Systems implementation that creates a randomly generated tree structure</p>
+                <p class="output">This project took a few weeks and was an incredible learning experiment and intro to string manipulation and randomly generated content</p>
+                <p class="output">To read more about it <a href="https://github.com/Hollowhking/Treev2">click here</a></p>
+            </div>
+        </div>
+        <br>
+        <div id="console">
+            <div>
+                <p class="command">> SERVER-CLIENT-TICTACTOE-GAME:</p>
+                <p class="command">> DESCRIPTION:</p>
+                <p class="output">Using java I created a server client side implementation of a tictactoe game, as well as git for version control.</p>
+                <p class="output">This project took a week to create and was an incredible learning opportunity to learn all about client server side archetecture and network structures</p>
+                <p class="output">To read more about it <a href="https://github.com/Hollowhking/systemdevfinal">click here</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
