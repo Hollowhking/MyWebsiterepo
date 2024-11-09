@@ -5,87 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleeby.ca</title>
     <!-- reference your stylesheet here -->
-    <link rel="stylesheet" href="styles/web.css">
+    <link rel = "stylesheet" href="styles/web.css">
     <!-- reference your source code here -->
-    <script src="scripts/web.js"></script>
+    <script src = "scripts/web.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <style>
-        /* Inline CSS for responsive adjustments */
-        body {
-            background-color: black;
-            min-height: 100vh;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navbar styling */
-        .navbar {
-            height: auto;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: center;
-        }
-
-        .headermenu {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .headermenu li {
-            margin: 0 1rem;
-        }
-
-        .headermenu a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Responsive image container */
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            padding-top: 2rem;
-        }
-
-        /* Media queries for different screen sizes */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                padding: 1rem;
-            }
-
-            .headermenu {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .image-container img {
-                padding-top: 1rem;
-            }
-        }
-    </style>
+    
+    
 </head>
-<body>
-    <nav class="navbar is-black is-fixed-top">
-        <ul class="headermenu">
+<body style="background-color: black; height: 1000px;">
+    <nav class="navbar is-black bg-faded navbar-light fixed-top fixed-top-2 is-fixed-top" style="height: 100px;">
+        <ul class = "headermenu" style="margin-left: auto; margin-right: auto; padding-left: 12rem; padding-top: 2rem;">
             <li class="headertext"><a href="index.html">H O M E</a></li>
-            <li class="headertext"><a href="codinggallery.html">C O D I N G</a></li>
-            <li class="headertext"><a href="#">R E S U M E</a></li>
-            <li class="headertext"><a href="#">T I M E  W A S T E R</a></li>
+			<li class="headertext"><a href="codinggallery.html">C O D I N G</a></li>
+            <li class="headertext"><a href="">R E S U M E</a></li>
+            <li class="headertext"><a href="">T I M E  W A S T E R</a></li>
+			<!-- <li><a href="">Support</a></li> -->
         </ul>
     </nav>
 
-    <nav class="navbar is-black">
-        <img src="./images/Untitled_Artwork (6).png" alt="Artwork logo" style="max-width: 100%; height: auto;">
+    <nav class="navbar is-black bg-inverse navbar-inverse fixed-top is-fixed-top" style="height: 100px;">
+        <img src="./images/Untitled_Artwork (6).png" href = "" style="margin-left: auto; margin-right: auto;">
     </nav>
-
-    <!-- Main content -->
+    <!-- your content goes here -->
     <div class="image-container">
         <div>
-            <img src="./images/Titlepage.ca.png" alt="Title Page Image">
+            <img src="./images/Titlepage.ca.png" width = "750" height="500" style="display: block;padding-top: 200px; margin-left: auto; margin-right: auto; text-align: center;">
         </div>
     </div>
 </body>
