@@ -7,6 +7,11 @@ export class guy {
         this.movespeed = movespeed;
         this.targetRaindrop = null;
         this.numcatches = 0;
+        this.spriteright = new Image();
+        this.spriteright.src = "images/robotright.png"
+        this.spriteleft = new Image();
+        this.spriteleft.src = "images/robotleft.png"
+        this.movedirection = 0;
     }
 
     // Find the nearest raindrop
@@ -38,8 +43,10 @@ export class guy {
 
             if (platformCenter < raindropCenter) {
                 this.x += this.movespeed;
+                this.movedirection = 0;
             } else if (platformCenter > raindropCenter) {
                 this.x -= this.movespeed;
+                this.movedirection = 1;
             }
         }
     }
@@ -50,6 +57,12 @@ export class guy {
         this.updatemovement();
 
         ctx.fillStyle = "blue";
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+        //ctx.fillRect(this.x, this.y, this.width, this.height);
+        if (this.movedirection == 0){
+            ctx.drawImage(this.spriteright, this.x, this.y-100, this.width, this.height+70);
+        }
+        else if (this.movedirection == 1){
+            ctx.drawImage(this.spriteleft, this.x, this.y-100, this.width, this.height+70);
+        }
     }
 }

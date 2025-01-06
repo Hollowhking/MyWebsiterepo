@@ -24,10 +24,10 @@ function startgame() {
         rainarray.push(curraindrop);
     }
 
-    // Initialize the platformz
+    // Initialize the platform
     guysarray = [];
     for (let i = 0; i < numguys; i++) {
-        let curguy = new guy(100, 20, getRandomInt(canvas.width - 100), canvas.height - 50, 5);
+        let curguy = new guy(200, 60, getRandomInt(canvas.width - 100), canvas.height - 50, 5);
         guysarray.push(curguy);
     }
 
@@ -47,13 +47,17 @@ function updateGameArea() {
     // Update all platforms (guys)
     guysarray.forEach((thisguy) => {
         thisguy.update(ctx, rainarray);
-        console.log(`Catches: ${thisguy.numcatches}`);
     });
 
     // Update all raindrops
     rainarray.forEach((raindrop) => {
         raindrop.update(ctx, "black", guysarray);
     });
+    
+    // guysarray.forEach((thisguy) => {
+    //     ctx.font = "50px serif";
+    //     ctx.fillText('Caught: '+thisguy.numcatches, 50, 250);
+    // });
 
     // Loop the animation
     requestAnimationFrame(updateGameArea);
