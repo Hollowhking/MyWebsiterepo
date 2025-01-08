@@ -53,7 +53,7 @@ function updateGameArea() {
     rainarray.forEach((raindrop) => {
         raindrop.update(ctx, "black", guysarray);
     });
-    
+
     // guysarray.forEach((thisguy) => {
     //     ctx.font = "50px serif";
     //     ctx.fillText('Caught: '+thisguy.numcatches, 50, 250);
